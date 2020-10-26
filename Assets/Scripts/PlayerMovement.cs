@@ -17,16 +17,22 @@ public class PlayerMovement : MonoBehaviour {
     void Update() {
 
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
-        animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
+        animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
+    
         if(Input.GetButtonDown("Jump")){
             jump = true;
+            animator.SetBool("isJumping", true);
         }
         if(Input.GetButtonDown("Crouch")){
             crouch = true;
         } else if (Input.GetButtonUp("Crouch")) {
             crouch = false;
         }
+    }
+
+    public void onLanding() {
+        animator.SetBool("isJumping", false);
     }
 
     void FixedUpdate() {

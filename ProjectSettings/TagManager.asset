@@ -14,9 +14,9 @@ TagManager:
   - 
   - 
   - Player
-  - 
-  - 
-  - 
+  - Obstacle
+  - TransparentBG
+  - Ground
   - 
   - 
   - 
@@ -41,6 +41,12 @@ TagManager:
   - name: background
     uniqueID: 604683481
     locked: 0
+  - name: TransparentBG
+    uniqueID: 3286162177
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 3269879917
     locked: 0
