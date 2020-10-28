@@ -14,8 +14,8 @@ TagManager:
   - 
   - 
   - Player
-  - 
-  - 
+  - Ground
+  - TransparentGround
   - 
   - 
   - 
@@ -40,6 +40,12 @@ TagManager:
   m_SortingLayers:
   - name: background
     uniqueID: 604683481
+    locked: 0
+  - name: transparentGround
+    uniqueID: 2818970233
+    locked: 0
+  - name: Ground
+    uniqueID: 3549394101
     locked: 0
   - name: Default
     uniqueID: 0

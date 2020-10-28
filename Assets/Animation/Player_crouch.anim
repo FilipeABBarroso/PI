@@ -6,7 +6,15 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_Name: Player_crouch
+=======
+<<<<<<< HEAD:Assets/Animation/Player_stand.anim
+  m_Name: Player_stand
+=======
+  m_Name: Player_crouch
+>>>>>>> e04a7371d569a8eb99f1a1ce16e77271286d70ba:Assets/Animation/Player_crouch.anim
+>>>>>>> e04a7371d569a8eb99f1a1ce16e77271286d70ba
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -25,7 +33,11 @@ AnimationClip:
     path: 
     classID: 212
     script: {fileID: 0}
+<<<<<<< HEAD
   m_SampleRate: 60
+=======
+  m_SampleRate: 12
+>>>>>>> e04a7371d569a8eb99f1a1ce16e77271286d70ba
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -46,7 +58,11 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
+<<<<<<< HEAD
     m_StopTime: 0.016666668
+=======
+    m_StopTime: 0.083333336
+>>>>>>> e04a7371d569a8eb99f1a1ce16e77271286d70ba
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
