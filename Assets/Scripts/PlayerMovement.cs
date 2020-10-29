@@ -14,7 +14,6 @@ public class PlayerMovement : MonoBehaviour {
 
     bool jump = false;
     bool crouch = false;
-    bool fRight = true;
     
     void Start()
     {
@@ -25,7 +24,6 @@ public class PlayerMovement : MonoBehaviour {
     void Update() {
 
         horizontalMove = Input.GetAxisRaw("Horizontal") * currentSpeed;
-        print(Input.GetAxisRaw("Horizontal"));
 
         animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
