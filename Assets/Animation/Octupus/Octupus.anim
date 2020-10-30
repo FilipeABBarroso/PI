@@ -6,15 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-  m_Name: Player_crouch
-=======
-<<<<<<< HEAD:Assets/Animation/Player_stand.anim
-  m_Name: Player_stand
-=======
-  m_Name: Player_crouch
->>>>>>> e04a7371d569a8eb99f1a1ce16e77271286d70ba:Assets/Animation/Player_crouch.anim
->>>>>>> e04a7371d569a8eb99f1a1ce16e77271286d70ba
+  m_Name: Octupus
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -28,16 +20,18 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: 037f4355400544ba2b7a278f7017ca2f, type: 3}
+      value: {fileID: 21300000, guid: 666c7c980071042078b367ca20e72f46, type: 3}
+    - time: 0.125
+      value: {fileID: 21300000, guid: 1f153e2e143d747bdbc3923785414876, type: 3}
+    - time: 0.25
+      value: {fileID: 21300000, guid: 69cb01971c0af4290a78b1c546eec0e1, type: 3}
+    - time: 0.375
+      value: {fileID: 21300000, guid: 9deca65eff5514be99809c3250fcbcfd, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
-<<<<<<< HEAD
-  m_SampleRate: 60
-=======
-  m_SampleRate: 12
->>>>>>> e04a7371d569a8eb99f1a1ce16e77271286d70ba
+  m_SampleRate: 8
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -52,17 +46,16 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300000, guid: 037f4355400544ba2b7a278f7017ca2f, type: 3}
+    - {fileID: 21300000, guid: 666c7c980071042078b367ca20e72f46, type: 3}
+    - {fileID: 21300000, guid: 1f153e2e143d747bdbc3923785414876, type: 3}
+    - {fileID: 21300000, guid: 69cb01971c0af4290a78b1c546eec0e1, type: 3}
+    - {fileID: 21300000, guid: 9deca65eff5514be99809c3250fcbcfd, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-<<<<<<< HEAD
-    m_StopTime: 0.016666668
-=======
-    m_StopTime: 0.083333336
->>>>>>> e04a7371d569a8eb99f1a1ce16e77271286d70ba
+    m_StopTime: 0.5
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
