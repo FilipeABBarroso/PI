@@ -6,21 +6,13 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD:Assets/Animation/Bullet/Bullet.controller
   m_Name: Bullet
-=======
-  m_Name: crab
->>>>>>> FBarroso:Assets/Animation/crab/crab.controller
   serializedVersion: 5
   m_AnimatorParameters: []
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
-<<<<<<< HEAD:Assets/Animation/Bullet/Bullet.controller
     m_StateMachine: {fileID: 7113495736142430834}
-=======
-    m_StateMachine: {fileID: 6940454863695491689}
->>>>>>> FBarroso:Assets/Animation/crab/crab.controller
     m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
@@ -30,44 +22,14 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
-<<<<<<< HEAD:Assets/Animation/Bullet/Bullet.controller
 --- !u!1102 &2157483452235445237
-=======
---- !u!1107 &6940454863695491689
-AnimatorStateMachine:
-  serializedVersion: 5
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Base Layer
-  m_ChildStates:
-  - serializedVersion: 1
-    m_State: {fileID: 9123454397336922197}
-    m_Position: {x: 294.69696, y: 232.77054, z: 0}
-  m_ChildStateMachines: []
-  m_AnyStateTransitions: []
-  m_EntryTransitions: []
-  m_StateMachineTransitions: {}
-  m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: 50, y: 20, z: 0}
-  m_EntryPosition: {x: 50, y: 120, z: 0}
-  m_ExitPosition: {x: 800, y: 120, z: 0}
-  m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 9123454397336922197}
---- !u!1102 &9123454397336922197
->>>>>>> FBarroso:Assets/Animation/crab/crab.controller
 AnimatorState:
   serializedVersion: 5
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD:Assets/Animation/Bullet/Bullet.controller
   m_Name: Impact
-=======
-  m_Name: crab_idle
->>>>>>> FBarroso:Assets/Animation/crab/crab.controller
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -80,11 +42,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-<<<<<<< HEAD:Assets/Animation/Bullet/Bullet.controller
   m_Motion: {fileID: 7400000, guid: b224416d226478c45b6b3d60f9bfc72d, type: 2}
-=======
-  m_Motion: {fileID: 7400000, guid: 945ed3f358ec4b548a3cc338dd7f09d4, type: 2}
->>>>>>> FBarroso:Assets/Animation/crab/crab.controller
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
