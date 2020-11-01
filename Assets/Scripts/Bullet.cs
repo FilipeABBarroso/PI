@@ -18,6 +18,11 @@ public class Bullet : MonoBehaviour
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
         Octupus octupus = hitInfo.GetComponent<Octupus>();
+        Crab crab = hitInfo.GetComponent<Crab>();
+        if(crab != null)
+        {
+            crab.TakeDamage(Damage);
+        }
         if(octupus != null)
         {
             octupus.TakeDamage(Damage);
