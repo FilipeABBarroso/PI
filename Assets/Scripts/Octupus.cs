@@ -1,5 +1,10 @@
-﻿using Random = System.Random;
+using Random = System.Random;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
+
 
 public class Octupus : MonoBehaviour
 {
@@ -10,7 +15,7 @@ public class Octupus : MonoBehaviour
     {
         health += getExtraHealth();
     }
-
+    
     public void TakeDamage(int damage)
     {
         health -= damage;
