@@ -25,7 +25,27 @@ public class Weapon : MonoBehaviour
         {
             player.animator.SetBool("Shoot", false);
         }
-            
+        if(Input.GetButtonDown("Crouch"))
+        {
+            double y = firePoint.position.y - 0.83;
+            firePoint.position = new Vector3(firePoint.position.x, (float) y, 0);
+        }
+        if (Input.GetButtonUp("Crouch"))
+        {
+            double y = firePoint.position.y + 0.83;
+            firePoint.position = new Vector3(firePoint.position.x,(float) y, 0);
+        }
+        if (Input.GetButtonDown("Horizontal"))
+        {
+            double y = firePoint.position.y - 0.1;
+            firePoint.position = new Vector3(firePoint.position.x, (float)y, 0);
+        }
+        if (Input.GetButtonUp("Horizontal"))
+        {
+            double y = firePoint.position.y + 0.1;
+            firePoint.position = new Vector3(firePoint.position.x, (float)y, 0);
+        }
+
     }
 
     private void Shoot()
