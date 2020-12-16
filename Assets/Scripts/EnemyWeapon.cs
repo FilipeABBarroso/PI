@@ -4,7 +4,6 @@ public class EnemyWeapon : MonoBehaviour
 {
     public Transform enemyFirePoint;
     public GameObject bulletPrefab;
-    public Player player;
     public float fireRate = 2.5f;
     float timeToShoot = 0f;
 

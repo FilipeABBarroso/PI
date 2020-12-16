@@ -1,15 +1,20 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using Random = System.Random;
 
 public class Crab : MonoBehaviour
 {
+    public int health = 100;
     public float speed;
-    private bool movingRight = false;
+    public int damage = 20;
+    float timeToTurn = 0f;
+
+    public GameObject deathEffect;
     public Transform groundCheck;
     public Collider2D bodyCollider;
-    public LayerMask groundLayer;
-    public int health = 100;
-    public GameObject deathEffect;
+    public LayerMask groundLayer, EnemyLayer;
+
+    private bool movingRight = false;
 
     private void Start()
     {
@@ -20,8 +25,27 @@ public class Crab : MonoBehaviour
     {
         transform.Translate(Vector2.left * speed * Time.deltaTime);
         RaycastHit2D groundInfo = Physics2D.Raycast(groundCheck.position, Vector2.down, 1f);
-        if (groundInfo.collider == false || bodyCollider.IsTouchingLayers(groundLayer))
+        if (groundInfo.collider == false || bodyCollider.IsTouchingLayers(groundLayer) || bodyCollider.IsTouchingLayers(EnemyLayer))
         {
+            if (movingRight)
+            {
+                transform.eulerAngles = new Vector3(0, 180, 0);
+                movingRight = false;
+            }
+            else
+            {
+                transform.eulerAngles = new Vector3(0, 0, 0);
+                movingRight = true;
+            }
+        }
+        turn();
+    }
+
+    void turn()
+    {
+        if (Time.time > timeToTurn + 5)
+        {
+            timeToTurn = Time.time;
             if (movingRight)
             {
                 transform.eulerAngles = new Vector3(0, 180, 0);
