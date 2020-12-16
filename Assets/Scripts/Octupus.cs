@@ -15,7 +15,10 @@ public class Octupus : MonoBehaviour
     {
         health += getExtraHealth();
     }
-    
+    private void FixedUpdate()
+    {
+        Flip();
+    }
     public void TakeDamage(int damage)
     {
         health -= damage;
