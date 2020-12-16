@@ -17,7 +17,6 @@ public class Weapon : MonoBehaviour
         if (Input.GetButton("Fire1") && Time.time > timeToShoot)
         {
             Shoot();
-            player.animator.SetTrigger("isShooting");
             player.animator.SetBool("Shoot", true);
             timeToShoot = Time.time + 1 / fireRate;
         }
@@ -25,7 +24,7 @@ public class Weapon : MonoBehaviour
         {
             player.animator.SetBool("Shoot", false);
         }
-        if(Input.GetButtonDown("Crouch"))
+        if (Input.GetButtonDown("Crouch"))
         {
             double y = firePoint.position.y - 0.83;
             firePoint.position = new Vector3(firePoint.position.x, (float) y, 0);
