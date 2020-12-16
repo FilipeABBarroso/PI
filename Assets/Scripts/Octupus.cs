@@ -16,15 +16,10 @@ public class Octupus : MonoBehaviour
         Destroy(oB);
         health += getExtraHealth();
     }
-
-<<<<<<< Updated upstream
-=======
     private void FixedUpdate()
     {
         Flip();
     }
-
->>>>>>> Stashed changes
     public void TakeDamage(int damage)
     {
         health -= damage;
