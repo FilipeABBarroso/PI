@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7056422759107376462}
   - component: {fileID: 4758116728555336924}
   - component: {fileID: 8619218982812811143}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: 'OcutupusBullet '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -153,8 +153,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5061bbe9a5888c4e9514ac1570a9dce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
-  damage: 20
+  Speed: 5
+  Damage: 40
   impactEffect: {fileID: 1926882511495361769, guid: f02dc75296baf204c9a9b6671c0142ce,
     type: 3}
   rb: {fileID: 250365183770024143}
