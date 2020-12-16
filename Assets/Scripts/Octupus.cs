@@ -10,12 +10,23 @@ public class Octupus : MonoBehaviour
 {
     public int health = 100;
     public GameObject deathEffect;
+    private int damage;
+    private bool facingLeft = true;
+    PlayerMovement target;
 
     private void Start()
     {
+        OctupusBullet oB = new OctupusBullet();
+        damage = oB.damage;
+        Destroy(oB);
         health += getExtraHealth();
     }
-    
+
+    private void FixedUpdate()
+    {
+        Flip();
+    }
+
     public void TakeDamage(int damage)
     {
         health -= damage;
@@ -23,6 +34,23 @@ public class Octupus : MonoBehaviour
         {
             Die();
         }
+    }
+
+    void Flip()
+    {
+        target = FindObjectOfType<PlayerMovement>();
+        if (target.transform.position.x > transform.position.x && facingLeft)
+        {
+            transform.Rotate(0f, 180f, 0f);
+            facingLeft = false;
+        }
+
+        if (target.transform.position.x < transform.position.x && !facingLeft)
+        {
+            transform.Rotate(0f, 180f, 0f);
+            facingLeft = true;
+        }
+
     }
 
     void Die()
