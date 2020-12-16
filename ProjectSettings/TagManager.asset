@@ -3,9 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - crab
-  - octupus
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -15,11 +13,11 @@ TagManager:
   - UI
   - 
   - 
-  - TransparentGround
-  - Ground
   - Player
+  - Ground
+  - TransparentGround
   - Enemy
-  - OctupusBullet
+  - 
   - 
   - 
   - 
